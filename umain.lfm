@@ -1,0 +1,199 @@
+object fMain: TfMain
+  Left = 290
+  Height = 294
+  Top = 145
+  Width = 493
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Verificare CNP'
+  ClientHeight = 294
+  ClientWidth = 493
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.3'
+  object Panel1: TPanel
+    Left = 0
+    Height = 97
+    Top = 0
+    Width = 493
+    Align = alTop
+    ClientHeight = 97
+    ClientWidth = 493
+    TabOrder = 0
+    object laCNP: TLabel
+      Left = 18
+      Height = 30
+      Top = 8
+      Width = 208
+      Caption = 'SAALLZZJJNNNC'
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'courier new'
+      ParentFont = False
+    end
+    object edCNP: TEdit
+      Left = 16
+      Height = 39
+      Top = 40
+      Width = 233
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+      Text = '1800101221123'
+      OnClick = edCNPClick
+      OnKeyPress = edCNPKeyPress
+    end
+    object buValidareCNP: TButton
+      Left = 256
+      Height = 39
+      Top = 40
+      Width = 81
+      Caption = 'Validare'
+      TabOrder = 1
+      OnClick = buValidareCNPClick
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 65
+    Top = 229
+    Width = 493
+    Align = alBottom
+    ClientHeight = 65
+    ClientWidth = 493
+    TabOrder = 1
+    object laCNPvalid: TLabel
+      Left = 16
+      Height = 38
+      Top = 13
+      Width = 152
+      Caption = 'CNP valid!'
+      Font.Color = clGreen
+      Font.Height = -27
+      Font.Name = 'Arial Black'
+      ParentFont = False
+      Visible = False
+    end
+    object laCNPinvalid: TLabel
+      Left = 248
+      Height = 38
+      Top = 13
+      Width = 178
+      Caption = 'CNP invalid!'
+      Font.Color = clRed
+      Font.Height = -27
+      Font.Name = 'Arial Black'
+      ParentFont = False
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 132
+    Top = 97
+    Width = 493
+    Align = alClient
+    ClientHeight = 132
+    ClientWidth = 493
+    TabOrder = 2
+    object laValidareLungime: TLabel
+      Left = 16
+      Height = 15
+      Top = 8
+      Width = 209
+      Caption = 'Validare lungime cod numeric personal:'
+    end
+    object laValidareSex: TLabel
+      Left = 16
+      Height = 15
+      Top = 24
+      Width = 90
+      Caption = 'Validare cifra sex:'
+    end
+    object laValidareAn: TLabel
+      Left = 16
+      Height = 15
+      Top = 40
+      Width = 111
+      Caption = 'Validare anul nasterii:'
+    end
+    object laValidareVarsta: TLabel
+      Left = 16
+      Height = 15
+      Top = 56
+      Width = 34
+      Caption = 'Varsta:'
+    end
+    object laValidareLuna: TLabel
+      Left = 16
+      Height = 15
+      Top = 72
+      Width = 111
+      Caption = 'Validare luna nasterii:'
+    end
+    object laValidareZi: TLabel
+      Left = 16
+      Height = 15
+      Top = 88
+      Width = 109
+      Caption = 'Validare ziua nasterii:'
+    end
+    object laValidareJudet: TLabel
+      Left = 16
+      Height = 15
+      Top = 104
+      Width = 125
+      Caption = 'Validare judetul nasterii:'
+    end
+    object laLungime: TLabel
+      Left = 232
+      Height = 15
+      Top = 8
+      Width = 5
+      Caption = '-'
+    end
+    object laCifra: TLabel
+      Left = 232
+      Height = 15
+      Top = 24
+      Width = 5
+      Caption = '-'
+    end
+    object laAn: TLabel
+      Left = 232
+      Height = 15
+      Top = 40
+      Width = 5
+      Caption = '-'
+    end
+    object laVarsta: TLabel
+      Left = 232
+      Height = 15
+      Top = 56
+      Width = 5
+      Caption = '-'
+    end
+    object laLuna: TLabel
+      Left = 232
+      Height = 15
+      Top = 72
+      Width = 5
+      Caption = '-'
+    end
+    object laZi: TLabel
+      Left = 232
+      Height = 15
+      Top = 88
+      Width = 5
+      Caption = '-'
+    end
+    object laJudet: TLabel
+      Left = 232
+      Height = 15
+      Top = 104
+      Width = 5
+      Caption = '-'
+    end
+  end
+end
